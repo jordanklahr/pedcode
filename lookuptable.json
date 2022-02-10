@@ -1,16 +1,23 @@
-{
-  "heroItems" : [
-      {
-          "image" : "test1",
-          "title" : "How about some parasailing?",
-          "paragraph" : "Parasailing is so much fun! You should definitely try it!"
-      },
-      {
-          "image" : "tes2",
-          "title" : "How about some boating?",
-          "paragraph" : "Just add on some water skiing, or maybe some wakeboarding and you're all set!"    
-      }
-  ]
-  response.heroItems[arrayRandom].image
+var jsonObject = {
+"start": {
+    "count": "5",
+    "title": "start",
+    "priorities": [
+        {
+            "txt": "Work"
+        },
+        {
+            "txt": "Time Sense"
+        },
+        {
+            "txt": "Dicipline"
+        },
+        {
+            "txt": "Confidence"
+        },
+        {
+            "txt": "CrossFunctional"
+        }
+    ]
 }
-
+}
