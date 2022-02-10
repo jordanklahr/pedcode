@@ -1,4 +1,3 @@
-<!DOCTYPE html>
-<html>
-<script type="text/javascript" language="javascript" src="https://raw.githubusercontent.com/jordanklahr/pedcode/main/lookuptable.json></script>
-</html>
+String text = "<html><head>HEAD</head><body>BODY</body>";
+ByteArrayInputStream input = new ByteArrayInputStream(text.getBytes("UTF-8"));
+Document doc = builder.parse(input);
