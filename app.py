@@ -11,7 +11,7 @@ def hello_world():
     if numb == 20:
         #response = str(random.randrange(0,300) - 100) + '%'
         return numb #response
-    else
+    else:
         return numb #str(random.randrange(0,100)) + '%'
 
 if __name__ == '__main__':
