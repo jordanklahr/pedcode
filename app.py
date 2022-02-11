@@ -12,7 +12,7 @@ def hello_world():
 #        response = str(random.randrange(0,300) - 100) + '%'
  #       return response
  #   else
-    return numb
+    return numb.str()
  #       return str(random.randrange(0,100)) + '%'
 
 if __name__ == '__main__':
