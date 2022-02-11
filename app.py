@@ -1,31 +1,12 @@
-#from flask import Flask, render_template, redirect, url_for, request
-#from datetime import datetime, timedelta
-#import json
-#import os
+from flask import Flask
 
-#app = Flask(__name__)
-
-#@app.route('/')
-#def hello():
-#     return 'Hello World!'
+my_awesome_app = Flask(__name__)
 
 
-
-# app.py
-from flask import Flask, request, jsonify
-app = Flask(__name__)
-
-@app.route('/getmsg/', methods=['GET'])
-def respond():
-
-
-    response = {}
-
-
-    # Return the response in json format
-    return jsonify(response)
+@my_awesome_app.route('/')
+def hello_world():
+    return 'Hello World!'
 
 
 if __name__ == '__main__':
-    # Threaded option to enable multiple instances for multiple user access support
-    app.run()
+    my_awesome_app.run()
