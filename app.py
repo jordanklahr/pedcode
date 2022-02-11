@@ -17,7 +17,7 @@ def hello_world():
     
     
 @app.route('/wakemeupinside')
-def hello_world():
+def jello():
     return " "
     
 if __name__ == '__main__':
