@@ -1,9 +1,9 @@
-import flask 
+import flask
 from datetime import datetime, timedelta
 import json
 import os
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route('/')
 def hello():
