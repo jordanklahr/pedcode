@@ -14,6 +14,11 @@ def hello_world():
     else:
         response = str(random.randrange(0,100)) + '%'
         return response
-
+    
+    
+@app.route('/wakemeupinside')
+def hello_world():
+    return " "
+    
 if __name__ == '__main__':
     app.run()
