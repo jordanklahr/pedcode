@@ -11,7 +11,7 @@ def hello_world():
     if numb == 20:
         #response = str(random.randrange(0,300) - 100) + '%'
         value = random.randrange(0,300) - 100
-        if value > 0 or value <= 100:
+        if value > 0 and value <= 100:
             if value < 50:
                 return "∞%"
             else:
