@@ -20,5 +20,11 @@ def hello_world():
 def jello():
     return " "
     
+    
+@app.route('/chartest')
+def chartest():
+    return "This is a test string for the character: ∞"
+
+
 if __name__ == '__main__':
     app.run()
