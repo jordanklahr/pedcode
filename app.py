@@ -8,22 +8,30 @@ app = Flask(__name__)
 @app.route('/love')
 def hello_world():
     numb = random.randint(1,20)
-    #dictionary = {0 : 'Zero', 1 : 'One', 2 : 'Two', 3 : 'Three' }
-    if numb == 20:
-        #response = str(random.randrange(0,300) - 100) + '%'
-        value = random.randrange(0,300) - 100
-        if value > 0 and value <= 100:
-            if value < 50:
-                return "∞%"
-            else:
-                return "-∞%"
+    login = request.headers['x-fossabot-message-userlogin']
+    mods = ['pimpega', 'redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj']
+    if(login in mods):
+        if numb == 20:
+            return "∞%"
         else:
+            value = random.randrange(50,300)
             response = str(value) + '%'
             return response
     else:
-        response = str(random.randrange(0,100)) + '%'
-        return response
-
+        if numb == 20:
+            #response = str(random.randrange(0,300) - 100) + '%'
+            value = random.randrange(0,300) - 100
+            if value > 0 and value <= 100:
+                if value < 50:
+                    return "∞% bing"
+                else:
+                    return "-∞% bing"
+            else:
+                response = str(value) + '% bing'
+                return response
+        else:
+            response = str(random.randrange(0,100)) + '% bing'
+            return response
     
 @app.route('/wakemeupinside')
 def jello():
