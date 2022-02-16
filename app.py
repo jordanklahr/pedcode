@@ -41,6 +41,7 @@ def bingus():
     login = 'bingus'
     #login = request.headers['x-fossabot-message-userlogin']
     #mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj, bingus]
+    listchamp = [1, 2, 3, 4]
     try:
         #if(login in mods):
             #return 'bing bong'
