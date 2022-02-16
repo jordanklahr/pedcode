@@ -40,7 +40,7 @@ def chartest():
 def bingus():
     login = 'bingus'
     #login = request.headers['x-fossabot-message-userlogin']
-    mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj, bingus]
+    #mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj, bingus]
     try:
         #if(login in mods):
             #return 'bing bong'
