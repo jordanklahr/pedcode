@@ -46,7 +46,7 @@ def bingus():
             #return 'bing bong'
         #else:
             #return 'you fucked up bingus'
-        return mods
+        return 'bing'
     except:
         return 'big bad fuckup bingus'
 
