@@ -53,14 +53,14 @@ def bingus():
             value = random.randrange(0,300) - 100
             if value > 0 and value <= 100:
                 if value < 50:
-                    return "∞%"
+                    return "∞% bing"
                 else:
-                    return "-∞%"
+                    return "-∞% bing"
             else:
-                response = str(value) + '%'
+                response = str(value) + '% bing'
                 return response
         else:
-            response = str(random.randrange(0,100)) + '%'
+            response = str(random.randrange(0,100)) + '% bing'
             return response
 
 if __name__ == '__main__':
