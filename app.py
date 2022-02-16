@@ -33,11 +33,12 @@ def jello():
 def chartest():
     return "This is a test string for the character: ∞"
 
+
 @app.route('/redoxisstupid')
 #this is the redox fucks around with things because they dont understand it section, move along now traveller nothing to see here
 def bingus():
     login = 'bingus'
-    print(flask.headers)
+    #print(flask.headers)
     return login
     
 
