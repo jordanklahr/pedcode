@@ -39,7 +39,7 @@ def chartest():
 #this is the redox fucks around with things because they dont understand it section, move along now traveller nothing to see here
 def bingus():
     #login = 'bingus'
-    login = request.headers['x-fossabot-channeldisplayname']
+    login = request.headers['x-fossabot-message-userlogin']
     return login
     
 
