@@ -37,8 +37,8 @@ def chartest():
 @app.route('/redoxisstupid')
 #this is the redox fucks around with things because they dont understand it section, move along now traveller nothing to see here
 def bingus():
-    #login = 'bingus'
-    login = Flask.request headers
+    login = 'bingus'
+    #login = Flask.request headers
     return login
     
 
