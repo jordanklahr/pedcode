@@ -40,14 +40,12 @@ def chartest():
 def bingus():
     login = 'bingus'
     #login = request.headers['x-fossabot-message-userlogin']
-    #mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj, bingus]
-    listchamp = [1, 2, 3, 4]
+    mods = ['pimpega', 'redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj', 'bingus']
     try:
-        if(1 in listchamp):
+        if(login in mods):
             return 'bing bong'
-        #else:
-            #return 'you fucked up bingus'
-        return 'bing'
+        else:
+            return 'bing'
     except:
         return 'big bad fuckup bingus'
 
