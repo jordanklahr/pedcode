@@ -41,14 +41,27 @@ def bingus():
     #login = 'floppa'
     login = request.headers['x-fossabot-message-userlogin']
     mods = ['pimpega', 'redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj']
-    try:
-        if(login in mods):
-            return login + ' is a lovely bingus'
+    if(login in mods):
+        if numb == 20:
+            return "∞%"
         else:
-            return login + ' is a big pepeg'
-    except:
-        return 'big bad fuckup bingus'
-
+            value = random.randrange(50,300)
+            return value + '%'
+    else:
+        if numb == 20:
+            #response = str(random.randrange(0,300) - 100) + '%'
+            value = random.randrange(0,300) - 100
+            if value > 0 and value <= 100:
+                if value < 50:
+                    return "∞%"
+                else:
+                    return "-∞%"
+            else:
+                response = str(value) + '%'
+                return response
+        else:
+            response = str(random.randrange(0,100)) + '%'
+            return response
 
 if __name__ == '__main__':
     app.run()
