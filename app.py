@@ -12,23 +12,20 @@ def hello_world():
     mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj]
     login = request.headers['x-fossabot-message-userlogin']
     #gets username from header
-    if(login in mods):
-        return 'bing bong'
-    else:
-        if numb == 20:
-            #response = str(random.randrange(0,300) - 100) + '%'
-            value = random.randrange(0,300) - 100
-            if value > 0 and value <= 100:
-                if value < 50:
-                    return "∞%"
-                else:
-                    return "-∞%"
+    if numb == 20:
+        #response = str(random.randrange(0,300) - 100) + '%'
+        value = random.randrange(0,300) - 100
+        if value > 0 and value <= 100:
+            if value < 50:
+                return "∞%"
             else:
-                response = str(value) + '%'
-                return response
+                return "-∞%"
         else:
-            response = str(random.randrange(0,100)) + '%'
+            response = str(value) + '%'
             return response
+    else:
+        response = str(random.randrange(0,100)) + '%'
+        return response
 
     
 @app.route('/wakemeupinside')
@@ -46,6 +43,10 @@ def chartest():
 def bingus():
     #login = 'bingus'
     login = request.headers['x-fossabot-message-userlogin']
+    mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj]
+        if(login in mods):
+        return 'bing bong'
+    else:
     return login
     
 
