@@ -9,9 +9,6 @@ app = Flask(__name__)
 def hello_world():
     numb = random.randint(1,20)
     #dictionary = {0 : 'Zero', 1 : 'One', 2 : 'Two', 3 : 'Three' }
-    #mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj]
-    #login = request.headers['x-fossabot-message-userlogin']
-    #gets username from header
     if numb == 20:
         #response = str(random.randrange(0,300) - 100) + '%'
         value = random.randrange(0,300) - 100
