@@ -38,14 +38,14 @@ def chartest():
 @app.route('/redoxisstupid')
 #this is the redox fucks around with things because they dont understand it section, move along now traveller nothing to see here
 def bingus():
-    login = 'floppa'
-    #login = request.headers['x-fossabot-message-userlogin']
+    #login = 'floppa'
+    login = request.headers['x-fossabot-message-userlogin']
     mods = ['pimpega', 'redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj']
     try:
         if(login in mods):
-            return 'bing bong'
+            return login + ' is a lovely bingus'
         else:
-            return 'dingus'
+            return login + ' is a big pepeg'
     except:
         return 'big bad fuckup bingus'
 
