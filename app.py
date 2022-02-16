@@ -12,7 +12,7 @@ def hello_world():
     mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj]
     login = request.headers['x-fossabot-message-userlogin']
     #gets username from header
-    if login in mods:
+    if(login in mods):
         return 'bing bong'
     else:
         if numb == 20:
