@@ -36,7 +36,8 @@ def chartest():
 @app.route('/redoxisstupid')
 #this is the redox fucks around with things because they dont understand it section, move along now traveller nothing to see here
 def Bingus():
-    login = headers
+    #login = headers
+    login = "bingus"
     return login
     
 
