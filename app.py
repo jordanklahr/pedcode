@@ -46,7 +46,7 @@ def bingus():
             return "∞%"
         else:
             value = random.randrange(50,300)
-            response = str(value) = '%'
+            response = str(value) + '%'
             return response
     else:
         if numb == 20:
