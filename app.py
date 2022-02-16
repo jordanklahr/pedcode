@@ -41,11 +41,13 @@ def bingus():
     login = 'bingus'
     #login = request.headers['x-fossabot-message-userlogin']
     mods = [pimpega, redoxxed, elskeling, sycon1, overlite, boba, roseduelistarxsia, kirbelle, rechampj, bingus]
-    if(login in mods):
-        return 'bing bong'
-    else:
-        return 'you fucked up bingus'
-    
+    try:
+        if(login in mods):
+            return 'bing bong'
+        else:
+            return 'you fucked up bingus'
+    except:
+        return 'big bad fuckup bingus'
 
 
 if __name__ == '__main__':
