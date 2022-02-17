@@ -23,14 +23,14 @@ def hello_world():
             value = random.randrange(0,300) - 100
             if value > 0 and value <= 100:
                 if value < 50:
-                    return "∞% bing"
+                    return "∞%"
                 else:
-                    return "-∞% bing"
+                    return "-∞%"
             else:
-                response = str(value) + '% bing'
+                response = str(value) + '%'
                 return response
         else:
-            response = str(random.randrange(0,100)) + '% bing'
+            response = str(random.randrange(0,100)) + '%'
             return response
     
 @app.route('/wakemeupinside')
