@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
     numb = random.randint(1,20)
     login = request.headers['x-fossabot-message-userlogin']
-    mods = ['pimpega', 'redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj']
+    mods = ['redoxxed', 'elskeling', 'sycon1', 'overlite', 'boba', 'roseduelistarxsia', 'kirbelle', 'rechampj']
     if(login in mods):
         if numb == 20:
             return "∞%"
